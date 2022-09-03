@@ -2,8 +2,7 @@
 .container {
 display: flex;
 flex-direction: row;
-/* height: 100%;
-width: 100%; */
+height: calc(100% - 80px);
 }
 
 .wrapper  {
@@ -20,6 +19,6 @@ color: #F8F8F7;
 color: #34E89E;
 }
 
-.wrapper > span {
+.wrapper > div > span {
 color: #34E89E;
 }

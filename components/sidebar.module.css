@@ -1,5 +1,13 @@
 .wrapper {
     width: 56px;
     border: 1px solid black; 
-    position: sticky;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 135px;
+}
+
+.sidebarItem {
+    margin: 14px 0px;
 }
