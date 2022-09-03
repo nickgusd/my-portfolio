@@ -1,0 +1,5 @@
+.wrapper {
+    width: 56px;
+    border: 1px solid black; 
+    position: sticky;
+}

@@ -1,0 +1,19 @@
+.wrapper {
+height: 50px;
+border: 1px solid black;
+padding: 14px;
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+}
+
+.link {
+color: lightblue;
+margin: 14px;
+}
+
+.linkWrapper {
+display: flex;
+flex-direction: row;
+margin-right: 60px;
+}

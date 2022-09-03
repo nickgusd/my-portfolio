@@ -1,0 +1,25 @@
+
+.container {
+display: flex;
+flex-direction: row;
+/* height: 100%;
+width: 100%; */
+}
+
+.wrapper  {
+padding: 80px;
+width: 50%;
+color: #b7b6c2;
+}
+
+.wrapper > h1 {
+color: #F8F8F7;
+}
+
+.wrapper > p {
+color: #34E89E;
+}
+
+.wrapper > span {
+color: #34E89E;
+}
