@@ -1,7 +1,9 @@
+import Layout from "../components/layout"
+
 export default function Experience() {
     return (
-        <div>
+        <Layout>
             <h1>Experience</h1>
-        </div>
+        </Layout>
     )
 } 
