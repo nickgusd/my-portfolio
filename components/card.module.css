@@ -17,6 +17,10 @@
     transform: scale(1.25);
 }
 
+.container:hover {
+   background-color: #34e89e2b
+}
+
 .container > header {
     text-align: center;
     color: #0F3443;
@@ -26,6 +30,10 @@
     color: #b7b6c2;
     font-weight: bold;
     font-size: 12px;
+}
+
+.container > div > p {
+    color: #34E89E;
 }
 
 .container > div > p > span {

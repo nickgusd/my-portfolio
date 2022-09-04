@@ -4,19 +4,20 @@ width: 50%; */
 padding: 150px;
 }
 
-/* .content {
-display: flex;
-flex-direction: column;
-margin: 14px;
-color: #34E89E;
-} */
+.content > span {
+padding: 8px 0px;
+}
 
-.content > :first-child:hover {
+.link {
 cursor: pointer;
-text-decoration: underline;
 color: #34E89E;
 }
 
-.content > span {
-padding: 8px 0px;
+.link > span {
+text-decoration: none;
+color: #b7b6c2;
+}
+
+.inactive {
+color: #b7b6c2;
 }

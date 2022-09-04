@@ -16,9 +16,6 @@ margin: 0px;
 }
 
 .wrapper:hover {
-background-color: #34E89E;
-}
-
-.wrapper:hover > p {
-color:  #0F3443;
+background: #34e89e2b;
+color: #34E89E;
 }
