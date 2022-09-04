@@ -10,6 +10,11 @@ margin: 14px;
 color: #34E89E;
 }
 
+.content > :first-child:hover {
+cursor: pointer;
+text-decoration: underline;
+}
+
 .content > span {
 padding: 8px 0px;
 }

@@ -14,7 +14,7 @@ export const About = () => {
                     I specialize in building User Interfaces for web applications! Currently I am working
                     As a Front End Engineer for a big data startup called <span>DemystData.</span>  I started at this company 
                     By helping build a Banker’s Portal for one of their Banking clients, but now for the last
-                    8 months I have been working as one of the main UI developers for <span>Demyst.com.</span>
+                    8 months I have been working as one of the main UI developers for <span><a href="https://www.demyst.com" target="_blank" >Demyst.com.</a></span>
                 </div>
                 <Button />
         </div>
