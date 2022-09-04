@@ -1,11 +1,16 @@
 import Layout from '../components/layout';
-// import { Card } from '../components/card';
+import { Sidebar } from '../components/sidebar';
+import { Card } from '../components/card';
+import { Grid } from '../components/grid';
+import styles from '../components/grid.module.css';
 
 export default function Portfolio() {
   return (
     <Layout>
-      <h1>Portfolio</h1>
-      {/* <Card /> */}
+      <div className={styles.flexWrapper}>
+        <Sidebar />
+        <Grid />
+      </div>
     </Layout>
   );
 }

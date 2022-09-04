@@ -1,0 +1,25 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.flexWrapper {
+    display: flex;
+    flex-direction: row;
+}
+
+.header {
+    padding: 14px;
+    color: white;
+    margin-left: 80px;
+    text-align: left;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    padding: 24px;
+    margin: 24px;
+    gap: 14px;
+}

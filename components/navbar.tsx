@@ -3,7 +3,9 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 
-import logo from '../public/assets/NG-portfolio-logo3.png';
+// import logo from '../public/assets/NG-portfolio-logo3.png';
+import LogoIcon from '../public/assets/Logo-icon.png';
+import Initials from '../public/assets/Initials.png';
 
 import styles from './navbar.module.css';
 
@@ -33,7 +35,7 @@ export const Navbar = () => {
   return (
     <div className={styles.wrapper}>
       <div className={styles.imageWrapper} onClick={() => router.push('/')}>
-        <Image src={logo} width={55} height={55} alt="logo" />
+        <Image src={LogoIcon} width={65} height={65} alt="logo" />
       </div>
       <div className={styles.linkWrapper}>
         {navItems.map((item, idx) => {
