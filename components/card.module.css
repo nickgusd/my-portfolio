@@ -1,0 +1,37 @@
+.container {
+    /* border: 1px solid #34E89E; */
+    /* background: #fff; */
+    background: #1c4250;
+    border-radius: 9px;
+    padding: 24px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    /* box-shadow: 0 1px 3px 0 #b7b6c2, 0 0 0 1px #b7b6c2; */
+    height: 300px;
+    /* width: 350px; */
+    max-width: 350px;
+    max-height: 500px;
+    transform: scale(1.25);
+}
+
+.container > header {
+    text-align: center;
+    color: #0F3443;
+}
+
+.container > div {
+    color: #b7b6c2;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.container > div > p > span {
+    color: #b7b6c2;
+}
+
+.image {
+    margin: 0 auto;
+}
