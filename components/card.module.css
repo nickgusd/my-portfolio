@@ -1,20 +1,15 @@
 .container {
-    /* border: 1px solid #34E89E; */
-    /* background: #fff; */
     background: #1c4250;
     border-radius: 9px;
-    padding: 24px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: left;
-    /* box-shadow: 0 1px 3px 0 #b7b6c2, 0 0 0 1px #b7b6c2; */
-    height: 300px;
-    /* width: 350px; */
-    max-width: 350px;
+    max-width: 300px;
     max-height: 500px;
     transform: scale(1.25);
+    cursor: pointer;
 }
 
 .container:hover {
@@ -23,7 +18,8 @@
 
 .container > header {
     text-align: center;
-    color: #0F3443;
+    color: white;
+    padding: 14px;
 }
 
 .container > div {
@@ -40,6 +36,18 @@
     color: #b7b6c2;
 }
 
+.container > span {
+    width: 100% !important;
+}
+
+.footer {
+    padding: 14px 24px;
+}
+
 .image {
     margin: 0 auto;
+}
+
+.content {
+    padding: 14px 24px 0px;
 }

@@ -1,14 +1,38 @@
 import React from 'react';
 import Image from 'next/image';
-import LinkedinSoft from '../public/assets/LinkedinSoft.png';
 
 import styles from './card.module.css';
 
-export const Card = ({ header, content, footer, src, onMouseEnter, onMouseLeave }) => (
-  <div className={styles.container} onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave}>
-    {header && <header>{header}</header>}
-    <Image className={styles.image} src={src} width="225" height="225" layout="fixed" />
-    {content && <div>{content}</div>}
-    {footer && <div>{footer}</div>}
-  </div>
-);
+export const Card = ({
+  header,
+  content,
+  footer,
+  src,
+  onMouseEnter,
+  onMouseLeave,
+  layout = 'fixed',
+  link = false,
+  href,
+  onClick
+}) =>
+  link ? (
+    <a
+      onClick={onClick}
+      target="_blank"
+      className={styles.container}
+      href={href}
+      onMouseEnter={onMouseEnter}
+      onMouseLeave={onMouseLeave}>
+      {header && <header>{header}</header>}
+      <Image className={styles.image} src={src} width="225" height="225" layout={layout} />
+      {content && <div className={styles.content}>{content}</div>}
+      {footer && <div className={styles.footer}>{footer}</div>}
+    </a>
+  ) : (
+    <div className={styles.container} onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave}>
+      {header && <header>{header}</header>}
+      <Image className={styles.image} src={src} width="225" height="225" layout={layout} />
+      {content && <div className={styles.content}>{content}</div>}
+      {footer && <div className={styles.footer}>{footer}</div>}
+    </div>
+  );

@@ -15,10 +15,18 @@ import facebookActive from '../public/assets/facebook-active.svg';
 export const Sidebar = () => {
   const [current, setCurrent] = useState(null);
   const sideBarItems = [
-    { filled: linkedin, active: linkedinActive },
-    { filled: github, active: githubActive },
-    { filled: facebook, active: facebookActive },
-    { filled: instagram, active: instagramActive }
+    {
+      filled: linkedin,
+      active: linkedinActive,
+      href: 'https://www.linkedin.com/in/nick-guimarais-5b1b6249/'
+    },
+    { filled: github, active: githubActive, href: 'https://github.com/nickgusd' },
+    { filled: facebook, active: facebookActive, href: 'https://www.facebook.com/nick.guimarais/' },
+    {
+      filled: instagram,
+      active: instagramActive,
+      href: 'https://www.instagram.com/nick_dacosta21/'
+    }
   ];
 
   const onMouseOver = (item) => setCurrent(item.active);
@@ -27,7 +35,9 @@ export const Sidebar = () => {
     <div className={styles.wrapper}>
       {sideBarItems.map((item, idx) => (
         <a
+          href={item.href}
           key={idx}
+          target="_blank"
           className={styles.sidebarItem}
           onMouseEnter={() => onMouseOver(item)}
           onMouseLeave={() => setCurrent(null)}>
