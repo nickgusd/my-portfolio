@@ -6,7 +6,7 @@ import { Card } from './card';
 
 export const Contact = () => {
   const handleMail = () => window.open(`mailto:nick.guimarais@gmail.com`);
-  const [active, setActive] = useState(null);
+  const [active, setActive] = useState(false);
   const handleMouseEnter = () => setActive(true);
   const handleMouseLeave = () => setActive(false);
 
