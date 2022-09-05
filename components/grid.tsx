@@ -1,6 +1,6 @@
 import { Card } from './card';
 
-import projects from '../content/projects.json';
+import { projects } from '../content/projects.js';
 import bubble from '../public/assets/bubble.jpg';
 
 import styles from './grid.module.css';
@@ -18,7 +18,7 @@ export const Grid = () => {
             header={item.project}
             content={item.description}
             footer={item.deployed}
-            src={bubble}
+            src={item.image}
             href={item.deployed}
           />
         ))}
@@ -30,7 +30,7 @@ export const Grid = () => {
             header={item.project}
             content={item.description}
             footer={item.deployed}
-            src={bubble}
+            src={item.image}
             href={item.deployed}
           />
         ))}
