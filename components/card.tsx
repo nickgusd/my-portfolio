@@ -24,14 +24,14 @@ export const Card = ({
       onMouseEnter={onMouseEnter}
       onMouseLeave={onMouseLeave}>
       {header && <header>{header}</header>}
-      <Image className={styles.image} src={src} width="225" height="200" layout={layout} />
+      <Image className={styles.image} src={src} layout={layout} />
       {content && <div className={styles.content}>{content}</div>}
       {footer && <div className={styles.footer}>{footer}</div>}
     </a>
   ) : (
     <div className={styles.container} onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave}>
       {header && <header>{header}</header>}
-      <Image className={styles.image} src={src} width="225" height="200" layout={layout} />
+      <Image className={styles.image} src={src} layout={layout} />
       {content && <div className={styles.content}>{content}</div>}
       {footer && <div className={styles.footer}>{footer}</div>}
     </div>

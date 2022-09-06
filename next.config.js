@@ -6,7 +6,7 @@ const nextConfig = {
     styledComponents: true,
   },
   images: {
-    domains: ["react.semantic-ui.com"],
+    domains: ["react.semantic-ui.com", "github.com"],
   },
 }
 
