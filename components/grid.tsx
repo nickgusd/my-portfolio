@@ -1,7 +1,8 @@
 import { Card } from './card';
 
 import { projects } from '../content/projects.js';
-import bubble from '../public/assets/bubble.jpg';
+
+import { CardFooter } from './card_footer';
 
 import styles from './grid.module.css';
 
@@ -14,10 +15,9 @@ export const Grid = () => {
       <div className={styles.row}>
         {projects.slice(0, 3).map((item) => (
           <Card
-            link
             header={item.project}
             content={item.description}
-            footer={item.deployed}
+            footer={<CardFooter github={item.github} deployed={item.deployed} />}
             src={item.image}
             href={item.deployed}
           />
@@ -26,10 +26,9 @@ export const Grid = () => {
       <div className={styles.row}>
         {projects.slice(3, 6).map((item) => (
           <Card
-            link
             header={item.project}
             content={item.description}
-            footer={item.deployed}
+            footer={<CardFooter github={item.github} deployed={item.deployed} />}
             src={item.image}
             href={item.deployed}
           />

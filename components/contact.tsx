@@ -28,7 +28,6 @@ export const Contact = () => {
             <p>Phone: (818) 235-8076</p>
           </div>
         }
-        footer={null}
       />
     </div>
   );

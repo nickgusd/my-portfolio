@@ -26,6 +26,7 @@
     color: #b7b6c2;
     font-weight: bold;
     font-size: 12px;
+     margin-top: auto;
 }
 
 .container > div > p {
@@ -42,6 +43,7 @@
 
 .footer {
     padding: 14px 24px;
+    width: 100%;
 }
 
 .image {
@@ -49,5 +51,12 @@
 }
 
 .content {
-    padding: 14px 24px 0px;
+    padding: 24px;
+}
+
+.cardFooter {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 14px;
 }

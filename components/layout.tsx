@@ -17,6 +17,11 @@ export default function Layout({ children }: Props) {
     <div className={styles.container}>
       <Head>
         <link rel="icon" href="/favicon.ico" />
+        <link
+          async
+          rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/semantic-ui@2/dist/semantic.min.css"
+        />
         <meta name="description" content="Learn how to build a personal website using Next.js" />
         <meta
           property="og:image"
