@@ -3,9 +3,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 
-// import logo from '../public/assets/NG-portfolio-logo3.png';
 import LogoIcon from '../public/assets/Logo-icon.png';
-import Initials from '../public/assets/Initials.png';
 
 import styles from './navbar.module.css';
 

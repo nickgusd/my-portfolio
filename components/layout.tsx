@@ -4,7 +4,6 @@ import { ReactNode } from 'react';
 
 import styles from './layout.module.css';
 import { Navbar } from './navbar';
-import LogoIcon from '../public/assets/Logo-icon.png';
 
 export const siteTitle = "Nick's Portfolio";
 
