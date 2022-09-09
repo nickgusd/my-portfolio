@@ -15,9 +15,7 @@ import facebookActive from '../public/assets/facebook-active.svg';
 
 export const Sidebar = () => {
   const [current, setCurrent] = useState(null);
-  const isMobile = useMediaQuery({
-    query: '(max-width: 769px)'
-  });
+  const isMobile = useMediaQuery({ query: '(max-width: 769px)' });
 
   const sideBarItems = [
     {

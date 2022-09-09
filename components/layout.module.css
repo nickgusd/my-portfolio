@@ -4,6 +4,16 @@
   height: 100vh;
   margin: 0px;
   padding: 0px;
+  overflow: auto;
+}
+
+.openContainer {
+  background: #0F3443;
+  width: 100vw;
+  height: 100vh;
+  margin: 0px;
+  padding: 0px;
+  overflow: hidden;
 }
 
 .wrapper {
@@ -11,6 +21,12 @@
   width: 100vw;
   overflow: auto;
 } 
+
+.mobileWrapper {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
 
 /* @media screen and (max-width: 765px) { 
  } */
