@@ -22,3 +22,23 @@ color: #34E89E;
 .wrapper > div > span {
 color: #34E89E;
 }
+
+@media screen and (max-width: 1024px) {
+    .wrapper{
+     padding: 60px;
+    }
+   }
+
+@media screen and (max-width: 820px) {
+    .wrapper{
+     width: 75%;
+     margin: 0 auto;
+     padding: 80px;
+    }
+   }
+
+@media screen and (max-width: 415px) {
+    .wrapper{
+     padding: 24px;
+    }
+}
