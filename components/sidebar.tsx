@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
+import { useMediaQuery } from 'react-responsive';
 
 import styles from './sidebar.module.css';
 
@@ -14,6 +15,10 @@ import facebookActive from '../public/assets/facebook-active.svg';
 
 export const Sidebar = () => {
   const [current, setCurrent] = useState(null);
+  const isMobile = useMediaQuery({
+    query: '(max-width: 769px)'
+  });
+
   const sideBarItems = [
     {
       filled: linkedin,
@@ -30,6 +35,8 @@ export const Sidebar = () => {
   ];
 
   const onMouseOver = (item) => setCurrent(item.active);
+
+  if (isMobile) return null;
 
   return (
     <div className={styles.wrapper}>

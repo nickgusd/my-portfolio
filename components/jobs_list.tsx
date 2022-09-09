@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import { Item } from 'semantic-ui-react';
 
 import styles from './jobs_list.module.css';
 
