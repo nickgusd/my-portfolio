@@ -1,9 +1,12 @@
 import Head from 'next/head';
-import { ReactNode } from 'react';
+import { ReactNode, useState } from 'react';
 
 import styles from './layout.module.css';
 import { Navbar } from './navbar';
+import { MobileNavbar } from './mobile_nav';
 import Responsive from './responsive';
+
+import { useMediaQuery } from 'react-responsive';
 
 export const siteTitle = "Nick's Portfolio";
 
@@ -12,9 +15,11 @@ interface Props {
 }
 
 export default function Layout({ children }: Props) {
+  const isMobile = useMediaQuery({ query: '(max-width: 769px)' });
+  const [isOpen, setIsOpen] = useState(false);
   return (
     <Responsive>
-      <div className={styles.container}>
+      <div className={isOpen ? styles.openContainer : styles.container}>
         <Head>
           <link rel="icon" href="/favicon.ico" />
           <link
@@ -33,8 +38,8 @@ export default function Layout({ children }: Props) {
           <meta name="twitter:card" content="summary_large_image" />
         </Head>
         <main>
-          <div className={styles.wrapper}>
-            <Navbar />
+          <div className={isMobile ? styles.mobileWrapper : styles.wrapper}>
+            {isMobile ? <MobileNavbar isOpen={isOpen} setIsOpen={setIsOpen} /> : <Navbar />}
             {children}
           </div>
         </main>
