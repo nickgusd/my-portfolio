@@ -5,6 +5,7 @@ width: 70%;
 margin: 0 auto;
 background: #1c4250;
 border-radius: 12px;
+margin-top: 50px;
 }
 
 .wrapper {
@@ -13,11 +14,9 @@ flex-direction: row;
 }
 
 .innerWrapper {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    margin-top: 50px;
-    gap: 40px;
+display: flex;
+flex-direction: column;
+width: 100%;
 }
 
 .innerWrapper > h1 {
