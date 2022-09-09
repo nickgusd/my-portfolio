@@ -1,8 +1,10 @@
 import { GetStaticProps } from 'next';
+import { useMediaQuery } from 'react-responsive';
 
 import Layout from '../components/layout';
 import { JobsList } from '../components/jobs_list';
 import { Sidebar } from '../components/sidebar';
+import { MobileJobsList } from '../components/mobile_jobs_list';
 
 import { getData } from '../helpers/helpers';
 import { experience } from '../content/experience';
@@ -19,6 +21,8 @@ export const getStaticProps: GetStaticProps = async (context) => {
 };
 
 export default function Experience({ data }) {
+  const isMobile = useMediaQuery({ query: '(max-width: 769px)' });
+
   return (
     <Layout>
       <div className={styles.wrapper}>
@@ -27,7 +31,7 @@ export default function Experience({ data }) {
           <div className={styles.header}>
             <h1>Experience</h1>
           </div>
-          <JobsList data={data} />
+          {isMobile ? <MobileJobsList data={data} /> : <JobsList data={data} />}
         </div>
       </div>
     </Layout>
