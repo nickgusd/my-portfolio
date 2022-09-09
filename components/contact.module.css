@@ -2,6 +2,11 @@
 padding: 130px;
 }
 
+.mobileContainer > h1 {
+color: white;
+text-align: center;
+}
+
 .content > span {
 padding: 8px 0px;
 }
@@ -28,6 +33,6 @@ color: #b7b6c2;
 
 @media screen and (max-width: 820px) {
     .wrapper{
-     display: none;
+     padding: 40px;
     }
    }

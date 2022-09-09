@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useRouter } from 'next/router';
 import Image from 'next/image';
 import { useMediaQuery } from 'react-responsive';
 
@@ -16,6 +17,8 @@ import facebookActive from '../public/assets/facebook-active.svg';
 export const Sidebar = () => {
   const [current, setCurrent] = useState(null);
   const isMobile = useMediaQuery({ query: '(max-width: 769px)' });
+  const router = useRouter();
+  const isContact = router.pathname === '/contact';
 
   const sideBarItems = [
     {
@@ -34,10 +37,10 @@ export const Sidebar = () => {
 
   const onMouseOver = (item) => setCurrent(item.active);
 
-  if (isMobile) return null;
+  if (isMobile && !isContact) return null;
 
   return (
-    <div className={styles.wrapper}>
+    <div className={isMobile ? styles.mobileWrapper : styles.wrapper}>
       {sideBarItems.map((item, idx) => (
         <a
           href={item.href}

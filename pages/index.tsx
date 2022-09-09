@@ -1,5 +1,6 @@
 import type { NextPage } from 'next';
 import React from 'react';
+import { useMediaQuery } from 'react-responsive';
 
 import Layout from '../components/layout';
 import { About } from '../components/about';
@@ -9,12 +10,13 @@ import { Sidebar } from '../components/sidebar';
 import styles from '../components/about.module.css';
 
 const Home: NextPage = () => {
+  const isMobile = useMediaQuery({ query: '(max-width: 820px)' });
   return (
     <Layout>
       <div className={styles.container}>
         <Sidebar />
         <About />
-        <Contact />
+        {!isMobile && <Contact />}
       </div>
     </Layout>
   );
