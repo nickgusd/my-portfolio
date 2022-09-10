@@ -3,7 +3,8 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 
-import LogoIcon from '../public/assets/Logo-icon.png';
+// import LogoIcon from '../public/assets/Logo-icon.png';
+import portfolioIcon from '../public/assets/portfolio_logo.svg';
 
 import styles from './navbar.module.css';
 
@@ -33,7 +34,7 @@ export const Navbar = () => {
   return (
     <div className={styles.wrapper}>
       <div className={styles.imageWrapper} onClick={() => router.push('/')}>
-        <Image src={LogoIcon} width={65} height={65} alt="logo" />
+        <Image src={portfolioIcon} width={50} height={50} alt="logo" />
       </div>
       <div className={styles.linkWrapper}>
         {navItems.map((item, idx) => {

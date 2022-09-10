@@ -3,9 +3,10 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 
-import LogoIcon from '../public/assets/Logo-icon.png';
+// import LogoIcon from '../public/assets/Logo-icon.png';
 import menuIcon from '../public/assets/menu-icon.svg';
 import closeIcon from '../public/assets/close-icon.svg';
+import portfolioIcon from '../public/assets/portfolio_logo.svg';
 
 import styles from './mobile_nav.module.css';
 
@@ -39,10 +40,10 @@ export const MobileNavbar = ({ isOpen, setIsOpen }) => {
   return (
     <div className={styles.wrapper}>
       <div className={styles.imageWrapper} onClick={() => router.push('/')}>
-        <Image src={LogoIcon} width={65} height={65} alt="logo" />
+        <Image src={portfolioIcon} width={50} height={50} alt="logo" />
       </div>
       <div className={styles.iconWrapper} onClick={handleClick}>
-        <Image src={menuIcon} width={35} height={35} alt="logo" />
+        <Image src={menuIcon} width={30} height={30} alt="logo" />
       </div>
       {isOpen && (
         <>
