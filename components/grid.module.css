@@ -4,6 +4,13 @@
     width: 100%;
 }
 
+.desktopContainer {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin: 0 auto; 
+}
+
 .flexWrapper {
     display: flex;
     flex-direction: row;
