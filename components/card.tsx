@@ -13,7 +13,8 @@ export const Card = ({
   layout = 'fixed',
   link = false,
   href,
-  onClick
+  onClick,
+  experience
 }) =>
   link ? (
     <a
@@ -25,14 +26,18 @@ export const Card = ({
       onMouseLeave={onMouseLeave}>
       {header && <header>{header}</header>}
       <Image className={styles.image} src={src} layout={layout} />
-      {content && <div className={styles.content}>{content}</div>}
+      {content && (
+        <div className={experience ? styles.contentExperience : styles.content}>{content}</div>
+      )}
       {footer && <div className={styles.footer}>{footer}</div>}
     </a>
   ) : (
     <div className={styles.container} onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave}>
       {header && <header>{header}</header>}
       <Image className={styles.image} src={src} layout={layout} />
-      {content && <div className={styles.content}>{content}</div>}
+      {content && (
+        <div className={experience ? styles.contentExperience : styles.content}>{content}</div>
+      )}
       {footer && <div className={styles.footer}>{footer}</div>}
     </div>
   );

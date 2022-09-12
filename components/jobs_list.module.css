@@ -76,6 +76,10 @@ border-radius: 9px;
     background-color: #34e89e2b;
 }
 
+.tech > div {
+    margin: 10px 0px;
+}
+
 @media screen and (max-width: 765px) {
     .header {
         margin: 0 auto;
