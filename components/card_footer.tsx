@@ -3,10 +3,10 @@ import React from 'react';
 import { useState } from 'react';
 import Image from 'next/image';
 
-import githubIcon from '../public/assets/github-logo-filled.svg';
-import githubActive from '../public/assets/github-logo-active.svg';
-import externalLink from '../public/assets/external-link.svg';
-import externalLinkActive from '../public/assets/external-link-active.svg';
+import githubIcon from '../public/github-logo-filled.svg';
+import githubActive from '../public/github-logo-active.svg';
+import externalLink from '../public/external-link.svg';
+import externalLinkActive from '../public/external-link-active.svg';
 
 import styles from './card.module.css';
 
