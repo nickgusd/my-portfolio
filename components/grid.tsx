@@ -20,6 +20,7 @@ export const Grid = ({ data }) => {
           <Card
             onClick={null}
             experience={false}
+            contact={false}
             header={project}
             content={description}
             footer={<CardFooter github={github} deployed={deployed} />}
@@ -33,6 +34,7 @@ export const Grid = ({ data }) => {
           <Card
             onClick={null}
             experience={false}
+            contact={false}
             header={project}
             content={description}
             footer={<CardFooter github={github} deployed={deployed} />}

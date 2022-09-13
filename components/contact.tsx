@@ -14,6 +14,7 @@ export const Contact = () => {
     <div className={styles.wrapper}>
       <Card
         experience={false}
+        contact
         link
         onClick={handleMail}
         layout="responsive"

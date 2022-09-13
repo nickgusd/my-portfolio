@@ -12,6 +12,7 @@ export const MobileJobsList = ({ data }) => {
           <Card
             onClick={null}
             experience
+            contact={false}
             header={item.company}
             content={
               <>
