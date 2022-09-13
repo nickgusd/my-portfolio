@@ -1,10 +1,3 @@
- import bubble from "/public/bubble.png";
- import apple from "/public/apple.png";
- import coding from "/public/coding.png";
- import ipad from "/public/ipad.png";
- import laptop from "/public/laptop.png";
- import screen from "/public/screen.png";
- 
  export const projects = [
     {
          project: "VaxDash.us",
