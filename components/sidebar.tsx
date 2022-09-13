@@ -49,7 +49,12 @@ export const Sidebar = () => {
           className={styles.sidebarItem}
           onMouseEnter={() => onMouseOver(item)}
           onMouseLeave={() => setCurrent(null)}>
-          <Image src={current === item.active ? item.active : item.filled} width={30} height={30} />
+          <Image
+            src={current === item.active ? item.active : item.filled}
+            width={30}
+            height={30}
+            priority
+          />
         </a>
       ))}
     </div>
