@@ -11,8 +11,11 @@
     "download-webviewer": "npx @pdftron/webviewer-downloader"
   },
   "dependencies": {
+    "@babel/eslint-parser": "^7.18.9",
     "@pdftron/webviewer": "^8.8.0",
     "@wojtekmaj/react-hooks": "^1.13.0",
+    "eslint-plugin-eslint-plugin": "^5.0.6",
+    "eslint-plugin-jest": "^27.0.4",
     "next": "^12.2.5",
     "react": "18.2.0",
     "react-dom": "18.2.0",

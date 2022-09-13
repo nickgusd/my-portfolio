@@ -1,3 +1,5 @@
+import React from 'react';
+
 import styles from './mobile_jobs_list.module.css';
 
 import { Card } from './card';
@@ -8,6 +10,7 @@ export const MobileJobsList = ({ data }) => {
       {data.map((item) => (
         <div className={styles.wrapper}>
           <Card
+            onClick={null}
             experience
             header={item.company}
             content={

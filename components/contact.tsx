@@ -13,6 +13,7 @@ export const Contact = () => {
   return (
     <div className={styles.wrapper}>
       <Card
+        experience={false}
         link
         onClick={handleMail}
         layout="responsive"

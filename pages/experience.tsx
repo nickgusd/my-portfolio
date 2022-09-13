@@ -1,3 +1,4 @@
+import React from 'react';
 import { GetStaticProps } from 'next';
 import { useMediaQuery } from 'react-responsive';
 
