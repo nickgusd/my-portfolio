@@ -8,6 +8,7 @@ const nextConfig = {
   images: {
     // domains: ["react.semantic-ui.com", "github.com"],
     unoptimized: true,
+    loader: 'default',
   },
 }
 
