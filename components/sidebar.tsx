@@ -5,14 +5,14 @@ import { useMediaQuery } from 'react-responsive';
 
 import styles from './sidebar.module.css';
 
-import linkedin from '../public/assets/linkedin-filled.svg';
-import github from '../public/assets/github-logo-filled.svg';
-import facebook from '../public/assets/facebook-filled.svg';
-import instagram from '../public/assets/instagram-filled.svg';
-import linkedinActive from '../public/assets/linkedin-active.svg';
-import githubActive from '../public/assets/github-logo-active.svg';
-import instagramActive from '../public/assets/instagram-active.svg';
-import facebookActive from '../public/assets/facebook-active.svg';
+import linkedin from '../public/linkedin-filled.svg';
+import github from '../public/github-logo-filled.svg';
+import facebook from '../public/facebook-filled.svg';
+import instagram from '../public/instagram-filled.svg';
+import linkedinActive from '../public/linkedin-active.svg';
+import githubActive from '../public/github-logo-active.svg';
+import instagramActive from '../public/instagram-active.svg';
+import facebookActive from '../public/facebook-active.svg';
 
 export const Sidebar = () => {
   const [current, setCurrent] = useState(null);

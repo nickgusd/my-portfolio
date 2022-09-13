@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 import styles from './contact.module.css';
-import picture from '../public/assets/LinkedinSoft.png';
+import picture from '../public/LinkedinSoft.png';
 import { Card } from './card';
 
 export const Contact = () => {

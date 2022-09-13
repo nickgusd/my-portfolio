@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { useRouter } from 'next/router';
 
 // import LogoIcon from '../public/assets/Logo-icon.png';
-import portfolioIcon from '../public/assets/portfolio_logo.svg';
+import portfolioIcon from '../public/portfolio_logo.svg';
 
 import styles from './navbar.module.css';
 

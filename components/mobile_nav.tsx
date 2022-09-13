@@ -4,9 +4,9 @@ import Link from 'next/link';
 import { useRouter } from 'next/router';
 
 // import LogoIcon from '../public/assets/Logo-icon.png';
-import menuIcon from '../public/assets/menu-icon.svg';
-import closeIcon from '../public/assets/close-icon.svg';
-import portfolioIcon from '../public/assets/portfolio_logo.svg';
+import menuIcon from '../public/menu-icon.svg';
+import closeIcon from '../public/close-icon.svg';
+import portfolioIcon from '../public/portfolio_logo.svg';
 
 import styles from './mobile_nav.module.css';
 
