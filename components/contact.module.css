@@ -25,6 +25,12 @@ color: #b7b6c2;
 color: #b7b6c2;
 }
 
+@media screen and (min-width: 1441px) {
+    .wrapper {
+        padding: 160px;
+    }
+   }
+
 @media screen and (max-width: 1024px) {
     .wrapper{
      padding: 60px;
