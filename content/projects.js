@@ -1,9 +1,9 @@
- import bubble from "../public/bubble.jpg";
- import apple from "../public/apple.jpg";
- import coding from "../public/coding.jpg";
- import ipad from "../public/ipad.jpg";
- import laptop from "../public/laptop.jpg";
- import screen from "../public/screen.jpg";
+ import bubble from "/public/bubble.jpg";
+ import apple from "/public/apple.jpg";
+ import coding from "/public/coding.jpg";
+ import ipad from "/public/ipad.jpg";
+ import laptop from "/public/laptop.jpg";
+ import screen from "/public/screen.jpg";
  
  export const projects = [
     {
