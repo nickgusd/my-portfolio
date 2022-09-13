@@ -1,3 +1,4 @@
+import React, { useEffect } from 'react';
 import { useMediaQuery } from 'react-responsive';
 import { useRouter } from 'next/router';
 
@@ -6,7 +7,6 @@ import { Sidebar } from '../components/sidebar';
 import Layout from '../components/layout';
 
 import styles from '../components/contact.module.css';
-import { useEffect } from 'react';
 
 export default function ContactMobile() {
   const isMobile = useMediaQuery({ query: '(max-width: 769px)' });

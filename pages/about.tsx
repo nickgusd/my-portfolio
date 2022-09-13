@@ -1,3 +1,5 @@
+import React from 'react';
+
 import { useMediaQuery } from 'react-responsive';
 
 import Layout from '../components/layout';

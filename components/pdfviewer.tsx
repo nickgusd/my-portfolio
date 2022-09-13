@@ -1,4 +1,5 @@
-import { useEffect, useRef, useState } from 'react';
+// @ts-nocheck
+import React, { useEffect, useRef } from 'react';
 
 export default function HomePage() {
   const viewer = useRef(null);

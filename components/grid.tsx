@@ -1,3 +1,5 @@
+import React from 'react';
+
 import { useMediaQuery } from 'react-responsive';
 
 import { Card } from './card';
@@ -16,6 +18,8 @@ export const Grid = ({ data }) => {
       <div className={styles.row}>
         {data.slice(0, 3).map(({ github, project, image, deployed, description }) => (
           <Card
+            onClick={null}
+            experience={false}
             header={project}
             content={description}
             footer={<CardFooter github={github} deployed={deployed} />}
@@ -27,6 +31,8 @@ export const Grid = ({ data }) => {
       <div className={styles.row}>
         {data.slice(3, 6).map(({ github, project, image, deployed, description }) => (
           <Card
+            onClick={null}
+            experience={false}
             header={project}
             content={description}
             footer={<CardFooter github={github} deployed={deployed} />}

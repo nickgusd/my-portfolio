@@ -1,7 +1,25 @@
-import React from 'react';
+import React, { ReactNode } from 'react';
 import Image from 'next/image';
+import type { StaticImageData } from 'next/image';
 
 import styles from './card.module.css';
+
+type LayoutProp = 'fixed' | 'fill' | 'intrinsic' | 'responsive';
+
+interface Props {
+  children?: ReactNode;
+  header?: ReactNode;
+  content?: ReactNode;
+  footer?: ReactNode;
+  src?: StaticImageData;
+  onMouseEnter?: () => void;
+  onMouseLeave?: () => void;
+  layout?: LayoutProp;
+  link?: boolean;
+  href?: string;
+  onClick: () => void;
+  experience: boolean;
+}
 
 export const Card = ({
   header,
@@ -15,7 +33,7 @@ export const Card = ({
   href,
   onClick,
   experience
-}) =>
+}: Props) =>
   link ? (
     <a
       onClick={onClick}

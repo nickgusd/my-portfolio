@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 
 export default function Responsive({ children }) {
   const [isClient, setIsClient] = useState(false);
