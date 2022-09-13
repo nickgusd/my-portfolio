@@ -19,6 +19,7 @@ interface Props {
   href?: string;
   onClick: () => void;
   experience: boolean;
+  contact: boolean;
 }
 
 export const Card = ({
@@ -32,7 +33,8 @@ export const Card = ({
   link = false,
   href,
   onClick,
-  experience
+  experience,
+  contact
 }: Props) =>
   link ? (
     <a
@@ -43,7 +45,15 @@ export const Card = ({
       onMouseEnter={onMouseEnter}
       onMouseLeave={onMouseLeave}>
       {header && <header>{header}</header>}
-      <Image className={styles.image} src={src} layout={layout} />
+      {src && (
+        <Image
+          className={styles.image}
+          src={src}
+          layout={layout}
+          width={225}
+          height={contact ? 225 : 175}
+        />
+      )}
       {content && (
         <div className={experience ? styles.contentExperience : styles.content}>{content}</div>
       )}
@@ -52,7 +62,15 @@ export const Card = ({
   ) : (
     <div className={styles.container} onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave}>
       {header && <header>{header}</header>}
-      <Image className={styles.image} src={src} layout={layout} />
+      {src && (
+        <Image
+          className={styles.image}
+          src={src}
+          layout={layout}
+          width={225}
+          height={contact ? 225 : 175}
+        />
+      )}
       {content && (
         <div className={experience ? styles.contentExperience : styles.content}>{content}</div>
       )}
