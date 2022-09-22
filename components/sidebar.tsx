@@ -13,6 +13,7 @@ import linkedinActive from '../public/linkedin-active.svg';
 import githubActive from '../public/github-logo-active.svg';
 import instagramActive from '../public/instagram-active.svg';
 import facebookActive from '../public/facebook-active.svg';
+import externalLinkActive from '../public/external-link-active.svg';
 
 export const Sidebar = () => {
   const [current, setCurrent] = useState(null);
@@ -57,23 +58,26 @@ export const Sidebar = () => {
           />
         </a>
       ))}
-      {!isMobile &&
-        sideBarItems.map((item, idx) => (
-          <a
-            href={item.href}
-            key={idx}
-            target="_blank"
-            className={styles.sidebarHidden}
-            onMouseEnter={() => onMouseOver(item)}
-            onMouseLeave={() => setCurrent(null)}>
-            <Image
-              src={current === item.active ? item.filled : item.active}
-              width={30}
-              height={30}
-              priority
-            />
-          </a>
-        ))}
+      {!isMobile && (
+        <div className={styles.sidebarHidden}>
+          {sideBarItems.map((item, idx) => (
+            <a
+              href={item.href}
+              key={idx}
+              target="_blank"
+              onMouseEnter={() => onMouseOver(item)}
+              onMouseLeave={() => setCurrent(null)}>
+              <Image
+                src={current === item.active ? item.filled : item.active}
+                width={30}
+                height={30}
+                priority
+              />
+            </a>
+          ))}
+          <Image src={externalLinkActive} width={20} height={20} priority />
+        </div>
+      )}
     </div>
   );
 };
