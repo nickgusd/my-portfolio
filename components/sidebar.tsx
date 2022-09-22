@@ -27,7 +27,11 @@ export const Sidebar = () => {
       active: linkedinActive,
       href: 'https://www.linkedin.com/in/nick-guimarais-5b1b6249/'
     },
-    { filled: github, active: githubActive, href: 'https://github.com/nickgusd' },
+    {
+      filled: github,
+      active: githubActive,
+      href: 'https://my-portfolio-nickgusd.vercel.app/github'
+    },
     { filled: facebook, active: facebookActive, href: 'https://www.facebook.com/nick.guimarais/' },
     {
       filled: instagram,
