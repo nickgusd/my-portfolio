@@ -28,7 +28,13 @@ export const CardFooter = ({ github, deployed }) => {
   return (
     <div className={styles.cardFooter}>
       <a href={github} target="_blank" onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave}>
-        <Image src={active ? githubActive : githubIcon} width={20} height={20} loading="eager" />
+        <Image
+          src={active ? githubActive : githubIcon}
+          width={20}
+          height={20}
+          loading="eager"
+          unoptimized
+        />
       </a>
       <a href={deployed} target="_blank" onMouseEnter={onMouseEnter2} onMouseLeave={onMouseLeave2}>
         <Image
@@ -36,6 +42,7 @@ export const CardFooter = ({ github, deployed }) => {
           width={20}
           height={20}
           loading="eager"
+          unoptimized
         />
       </a>
     </div>
