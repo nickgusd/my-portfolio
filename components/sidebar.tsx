@@ -57,6 +57,23 @@ export const Sidebar = () => {
           />
         </a>
       ))}
+      {!isMobile &&
+        sideBarItems.map((item, idx) => (
+          <a
+            href={item.href}
+            key={idx}
+            target="_blank"
+            className={styles.sidebarHidden}
+            onMouseEnter={() => onMouseOver(item)}
+            onMouseLeave={() => setCurrent(null)}>
+            <Image
+              src={current === item.active ? item.filled : item.active}
+              width={30}
+              height={30}
+              priority
+            />
+          </a>
+        ))}
     </div>
   );
 };

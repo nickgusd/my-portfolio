@@ -5,6 +5,8 @@
     justify-content: flex-start;
     align-items: center;
     padding-top: 135px;
+    position: relative;
+    overflow: hidden;
 }
 
 .sidebarItem {
@@ -20,4 +22,10 @@
 
 .mobileWrapper > a {
     padding: 0px 14px;
+}
+
+.sidebarHidden {
+    position: absolute;
+    right: -10000px;
+    visibility: hidden;
 }
