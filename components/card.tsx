@@ -52,7 +52,7 @@ export const Card = ({
           layout={layout}
           width={225}
           height={contact ? 225 : 175}
-          priority
+          loading="eager"
         />
       )}
       {content && (
@@ -70,7 +70,7 @@ export const Card = ({
           layout={layout}
           width={225}
           height={contact ? 225 : 175}
-          priority
+          loading="eager"
         />
       )}
       {content && (
