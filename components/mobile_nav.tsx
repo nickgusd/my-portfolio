@@ -3,7 +3,6 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 
-// import LogoIcon from '../public/assets/Logo-icon.png';
 import menuIcon from '../public/menu-icon.svg';
 import closeIcon from '../public/close-icon.svg';
 import portfolioIcon from '../public/portfolio_logo.svg';
@@ -40,15 +39,15 @@ export const MobileNavbar = ({ isOpen, setIsOpen }) => {
   return (
     <div className={styles.wrapper}>
       <div className={styles.imageWrapper} onClick={() => router.push('/')}>
-        <Image src={portfolioIcon} width={50} height={50} alt="logo" loading="eager" />
+        <Image src={portfolioIcon} width={50} height={50} alt="logo" loading="eager" unoptimized />
       </div>
       <div className={styles.iconWrapper} onClick={handleClick}>
-        <Image src={menuIcon} width={30} height={30} alt="logo" loading="eager" />
+        <Image src={menuIcon} width={30} height={30} alt="logo" loading="eager" unoptimized />
       </div>
       {isOpen && (
         <>
           <div className={styles.menuOpenIcon} onClick={handleClick}>
-            <Image src={closeIcon} width={25} height={25} alt="logo" />
+            <Image src={closeIcon} width={25} height={25} alt="logo" loading="eager" unoptimized />
           </div>
           <div className={styles.linkContainer}>
             {navItems.map((item, idx) => {
