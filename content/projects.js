@@ -1,5 +1,13 @@
  export const projects = [
     {
+        project: "Lifeshack.com",
+        github: "https://github.com/PGuimarais/lsjobs-frontend",
+        deployed: "https://www.lifeshack.com/", 
+        image: "/screen.png",
+        description: 
+        "A job search platform that allows a user to search for remote and hybrid jobs only"
+    },
+    {
          project: "VaxDash.us",
          github: "https://github.com/Lifeshack/vax-dash",
          deployed: "https://vaxdash.us/",
@@ -38,14 +46,6 @@
         image: "/laptop.png", 
         description: 
         "An application that has the ability to save, delete, and view old notes."
-    },
-    {
-        project: "Secure Travel App",
-        github: "https://github.com/edwardreyes29/project-1",
-        deployed: "https://edwardreyes29.github.io/project-1/", 
-        image: "/screen.png",
-        description: 
-        "A travel app that advises the user where they should travel based on Coronavirus risk recommendations, and provides the user with travel accommodation options."
     }
  ]
  
