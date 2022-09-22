@@ -34,7 +34,7 @@ export const Navbar = () => {
   return (
     <div className={styles.wrapper}>
       <div className={styles.imageWrapper} onClick={() => router.push('/')}>
-        <Image src={portfolioIcon} width={50} height={50} alt="logo" loading="eager" />
+        <Image src={portfolioIcon} width={50} height={50} alt="logo" />
       </div>
       <div className={styles.linkWrapper}>
         {navItems.map((item, idx) => {
