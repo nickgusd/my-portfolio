@@ -2,6 +2,10 @@
 padding: 130px;
 }
 
+.wrapper > a {
+cursor: pointer;
+}
+
 .mobileContainer > h1 {
 color: white;
 text-align: center;
@@ -12,7 +16,6 @@ padding: 8px 0px;
 }
 
 .link {
-cursor: pointer;
 color: #34E89E;
 }
 
