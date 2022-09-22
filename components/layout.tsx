@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import React, { ReactNode, useState } from 'react';
+import { useRouter } from 'next/router';
 
 import styles from './layout.module.css';
 import { Navbar } from './navbar';
@@ -17,6 +18,9 @@ interface Props {
 export default function Layout({ children }: Props) {
   const isMobile = useMediaQuery({ query: '(max-width: 769px)' });
   const [isOpen, setIsOpen] = useState(false);
+  const router = useRouter();
+  const isGithub = router.pathname === '/github';
+
   return (
     <Responsive>
       <div className={isOpen ? styles.openContainer : styles.container}>
@@ -34,7 +38,9 @@ export default function Layout({ children }: Props) {
         </Head>
         <main>
           <div className={isMobile ? styles.mobileWrapper : styles.wrapper}>
-            {isMobile ? <MobileNavbar isOpen={isOpen} setIsOpen={setIsOpen} /> : <Navbar />}
+            {isMobile
+              ? !isGithub && <MobileNavbar isOpen={isOpen} setIsOpen={setIsOpen} />
+              : !isGithub && <Navbar />}
             {children}
           </div>
         </main>
