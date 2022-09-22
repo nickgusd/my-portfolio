@@ -53,7 +53,7 @@ export const Sidebar = () => {
             src={current === item.active ? item.active : item.filled}
             width={30}
             height={30}
-            loading="eager"
+            priority
           />
         </a>
       ))}
