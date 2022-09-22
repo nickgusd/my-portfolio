@@ -40,10 +40,10 @@ export const MobileNavbar = ({ isOpen, setIsOpen }) => {
   return (
     <div className={styles.wrapper}>
       <div className={styles.imageWrapper} onClick={() => router.push('/')}>
-        <Image src={portfolioIcon} width={50} height={50} alt="logo" />
+        <Image src={portfolioIcon} width={50} height={50} alt="logo" loading="eager" />
       </div>
       <div className={styles.iconWrapper} onClick={handleClick}>
-        <Image src={menuIcon} width={30} height={30} alt="logo" />
+        <Image src={menuIcon} width={30} height={30} alt="logo" loading="eager" />
       </div>
       {isOpen && (
         <>
