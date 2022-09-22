@@ -53,7 +53,6 @@ export const Card = ({
           width={225}
           height={contact ? 225 : 175}
           loading="eager"
-          unoptimized
         />
       )}
       {content && (
@@ -72,7 +71,6 @@ export const Card = ({
           width={225}
           height={contact ? 225 : 175}
           loading="eager"
-          unoptimized
         />
       )}
       {content && (

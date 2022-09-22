@@ -54,7 +54,6 @@ export const Sidebar = () => {
             width={30}
             height={30}
             loading="eager"
-            unoptimized
           />
         </a>
       ))}
