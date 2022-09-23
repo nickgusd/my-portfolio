@@ -12,3 +12,4 @@ export default function Resume(): JSX.Element {
     </div>
   );
 }
+//resume
