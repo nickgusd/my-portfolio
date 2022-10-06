@@ -9,13 +9,13 @@ export default function HomePage() {
       WebViewer(
         {
           path: '/lib',
-          initialDoc: '/files/NG_Resume_02.21.pdf'
+          initialDoc: '/files/NG_Resume_09.22.pdf'
         },
         viewer.current
       )
         .then((instance) => {
           const { docViewer } = instance;
-          docViewer.getDocument('/files/NG_Resume_02.21.pdf');
+          docViewer.getDocument('/files/NG_Resume_09.22.pdf');
         })
         .catch((err) => console.log(err));
     });
