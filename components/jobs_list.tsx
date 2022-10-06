@@ -19,6 +19,7 @@ export const JobsList = ({ data }) => {
       </div>
       <div className={styles.secondItem}>
         <h2>{current.company}</h2>
+        <h3>{current.position}</h3>
         <p>Date: {current.date}</p>
         <div>{current.description}</div>
         <br />
