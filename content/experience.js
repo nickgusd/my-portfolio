@@ -12,7 +12,7 @@ export const experience = [
         position: "Front End Engineer",
         company: "Lifeshack",
         date: "November 2020 - May 2021,  January 2022 - April 2022",
-        description: 'Helped my twin brother develop the UI for a start-up that he has launched called Lifeshack.com. My twin brother who is Co-founder at Lifeshack and a Senior Software Engineer helped mentor me for several months where we also developed a Covid-19 vaccine dashboard called VaxDash.us',
+        description: 'Helped my twin brother develop the UI for a start-up that he has launched called Lifeshack.com. My twin brother, who is Co-founder at Lifeshack and a Senior Software Engineer, helped mentor me for several months while building Lifeshack.com',
         techStack: "React, Next.js, TypeScript, AWS"
     },
     {
