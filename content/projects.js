@@ -8,12 +8,12 @@
         "A job search platform that allows a user to search for remote and hybrid jobs only"
     },
     {
-         project: "VaxDash.us",
-         github: "https://github.com/Lifeshack/vax-dash",
-         deployed: "https://vaxdash.us/",
+         project: "Financial Calculator",
+         github: "https://github.com/nickgusd/PV-FV-Calculator",
+         deployed: "http://financial-calculator-react.s3-website-us-west-1.amazonaws.com/",
          image: "/bubble.png",
          description: 
-             "This platform allows users to make an informed decision about whether or not to get the COVID-19 vaccine, view the vaccination progress, determine vaccine eligibility in their state, and locate vaccine clinics."
+             "This is a functional Financial Calculator that allows you to perform Present Value, Future Value, Payments, Interest Rate, and Number of periods calculations."
      },
      {
         project: "Ernie Ball Landing Page",
