@@ -18,7 +18,7 @@
     {
          project: "Financial Calculator",
          github: "https://github.com/nickgusd/PV-FV-Calculator",
-         deployed: "http://financial-calculator-react.s3-website-us-west-1.amazonaws.com/",
+         deployed: "https://pv-fv-calculator.vercel.app/",
          image: "/bubble.png",
          description: 
              "This is a functional Financial Calculator that allows you to perform Present Value, Future Value, Payments, Interest Rate, and Number of periods calculations."
