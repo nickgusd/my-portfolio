@@ -8,6 +8,14 @@
         "A job search platform that allows a user to search for remote and hybrid jobs only"
     },
     {
+        project: "Rick and Morty",
+        github: "https://github.com/nickgusd/rick-and-morty",
+        deployed: "https://rick-and-morty-nickgusd.vercel.app/", 
+        image: "/background_space.png",
+        description: 
+        "An application that allows a user to search all characters in Rick in Morty, find each character in every location, and see each character in each episode!"
+    },
+    {
         project: "Ernie Ball Landing Page",
         github: "https://github.com/nickgusd/Landing-Page",
         deployed: "https://landing-page-nickgusd.vercel.app/", 
@@ -38,14 +46,6 @@
         image: "/laptop.png", 
         description: 
         "An application that has the ability to save, delete, and view old notes."
-    },
-    {
-        project: "Music eXchange",
-        github: "https://github.com/nickgusd/Muse-eXchange",
-        deployed: "https://musicexchangev2.herokuapp.com/", 
-        image: "/coding.png",
-        description: 
-        "An application that allows musicians and artists to their sell music and tutorials directly to their fans."
     },
  ]
  
