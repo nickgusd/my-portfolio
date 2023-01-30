@@ -12,14 +12,9 @@ export const About = () => {
       <h2>I am a Software Engineer</h2>
       <div>
         I specialize in building User Interfaces for web applications! Currently I am working As a
-        Front End Engineer for a big data startup called <span>DemystData.</span> I started at this
-        company By helping build a Banker’s Portal for one of their Banking clients, but now for the
-        last 8 months I have been working as one of the main UI developers for{' '}
-        <span>
-          <a href="https://www.demyst.com" target="_blank">
-            Demyst.com.
-          </a>
-        </span>
+        Front End Engineer for an API platform called <span>DemystData.</span> I have experience
+        working on large client projects as well as experience working on large user facing
+        platforms.
       </div>
       <Button />
     </div>
