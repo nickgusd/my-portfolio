@@ -3,16 +3,16 @@ export const experience = [
         position: "Front End Engineer",
         company: "Demyst",
         date: "June 2021 - present",
-        description: "Joined the Truebiz team at Demyst where I built the UI for a client's Bankers Portal to help automate the lending procress for Small Business Loans. The truebiz projects were being phased out so I was switched onto the core platform team that developes Demyst.com. On the core platform team I have helped build and implement UI components, develop new features, bug fixes, and supported the migration of the platform to Next.JS",
-        techStack: "React, Next.js, Redux, AWS, Styled Components, Less, Axios",
+        description: "Joined the Truebiz team at Demyst where I built the UI for a client's Bankers Portal to help automate the lending procress for small business Loans. Once the Truebiz projects went live I was switched onto the core platform team that developes Demyst.com. On the core platform team I have helped build and implement UI components, develop new features, bug fixes, and supported the migration of the platform to Next.JS",
+        techStack: "React, Next.js, Redux, AWS, Styled Components, Less, Axios, Jenkins CI/CD",
         tools: "Jira, Github Issues, Figma",
         testing: "Cypress, Enzyme, React Testing Library, Jest"
     },
     {
         position: "Front End Engineer",
         company: "Lifeshack",
-        date: "November 2020 - May 2021,  January 2022 - April 2022",
-        description: 'Helped my twin brother develop the UI for a start-up that he has launched called Lifeshack.com. My twin brother, who is Co-founder at Lifeshack and a Senior Software Engineer, helped mentor me for several months while building Lifeshack.com',
+        date: "November 2020 - May 2021",
+        description: 'Helped develop the UI for a remote and hybrid only job search platform called Lifeshack.com',
         techStack: "React, Next.js, TypeScript, AWS"
     },
     {
