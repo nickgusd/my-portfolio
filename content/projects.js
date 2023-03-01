@@ -1,11 +1,19 @@
  export const projects = [
     {
+        project: "Find a pet",
+        github: "https://github.com/nickgusd/Find-A-Pet",
+        deployed: "https://find-a-pet.herokuapp.com/", 
+        image: "/find-a-pet-screenshot.png",
+        description: 
+        "A platform that allows a user to search for adoptable pets, view rescue organizations, and save their favorite pets!"
+    },
+    {
         project: "Lifeshack.com",
         github: "https://github.com/PGuimarais/lsjobs-frontend",
         deployed: "https://www.lifeshack.com/", 
-        image: "/screen.png",
+        image: "/lifeshack.png",
         description: 
-        "A job search platform that allows a user to search for remote and hybrid jobs only"
+        "A job search platform that allows a user to search for remote and hybrid jobs only!"
     },
     {
         project: "Rick and Morty",
@@ -31,14 +39,14 @@
          description: 
              "This is a functional Financial Calculator that allows you to perform Present Value, Future Value, Payments, Interest Rate, and Number of periods calculations."
      },
-    {
-        project: "Tinder for Restaurants",
-        github: "https://github.com/tpacba/tinderforrestaurants",
-        deployed: "https://tinder-for-restaurants.herokuapp.com/", 
-        image: "/ipad.png",
-        description: 
-        "An application that helps a group of people choose a restaurant through rounds of swiping, similar to Tinder UI. When the group narrows down the restaurants that they like to 1 restaurant, the group is presented with a match."
-    },
+    // {
+    //     project: "Tinder for Restaurants",
+    //     github: "https://github.com/tpacba/tinderforrestaurants",
+    //     deployed: "https://tinder-for-restaurants.herokuapp.com/", 
+    //     image: "/ipad.png",
+    //     description: 
+    //     "An application that helps a group of people choose a restaurant through rounds of swiping, similar to Tinder UI. When the group narrows down the restaurants that they like to 1 restaurant, the group is presented with a match."
+    // },
     {
         project: "Note-Taker",
         github: "https://github.com/nickgusd/Note-Taker",

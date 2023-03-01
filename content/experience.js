@@ -12,8 +12,8 @@ export const experience = [
         position: "Front End Engineer",
         company: "Lifeshack",
         date: "November 2020 - May 2021",
-        description: 'Helped develop the UI for a remote and hybrid only job search platform called Lifeshack.com',
-        techStack: "React, Next.js, TypeScript, AWS"
+        description: 'Helped develop the UI for a remote and hybrid only job search platform called Lifeshack.com. I  ',
+        techStack: "React, Next.js, TypeScript, AWS, Semantic UI React"
     },
     {
         position: "Senior Associate",
