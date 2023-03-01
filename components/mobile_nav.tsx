@@ -3,7 +3,6 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 
-// import LogoIcon from '../public/assets/Logo-icon.png';
 import menuIcon from '../public/menu-icon.svg';
 import closeIcon from '../public/close-icon.svg';
 import portfolioIcon from '../public/portfolio_logo.svg';
