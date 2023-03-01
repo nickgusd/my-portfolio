@@ -12,7 +12,6 @@
 
 .container:hover {
    background-color: #34e89e2b;
-   /* cursor: pointer; */
 }
 
 .container > header {
