@@ -3,7 +3,7 @@ export const experience = [
         position: "Front End Engineer",
         company: "Demyst",
         date: "June 2021 - present",
-        description: "Joined the Truebiz team at Demyst where I built the UI for a client's Bankers Portal to help automate the lending procress for small business Loans. Once the Truebiz projects went live I was switched onto the core platform team that developes Demyst.com. On the core platform team I have helped build and implement UI components, develop new features, bug fixes, and supported the migration of the platform to Next.JS",
+        description: "Joined the Truebiz team at Demyst where I built the UI for a client's Bankers Portal to help automate the lending procress for small business Loans. Once the Truebiz projects went live I was switched onto the core platform team that develops Demyst.com. On the core platform team I helped build and implement UI components, develop new features, fix bugs, and support the migration of the platform to Next.JS",
         techStack: "React, Next.js, Redux, AWS, Styled Components, Less, Axios, Jenkins CI/CD",
         tools: "Jira, Github Issues, Figma",
         testing: "Cypress, Enzyme, React Testing Library, Jest"
@@ -12,7 +12,7 @@ export const experience = [
         position: "Front End Engineer",
         company: "Lifeshack",
         date: "November 2020 - May 2021",
-        description: 'Helped develop the UI for a remote and hybrid only job search platform called Lifeshack.com. I  ',
+        description: 'Helped develop the UI for a remote and hybrid only job search platform called Lifeshack.com. I made the entire platform mobile responsive, implemented job filters on mobile and desktop, created resusable components, implemented the profile pages, and performed QA testing on the entire platform.',
         techStack: "React, Next.js, TypeScript, AWS, Semantic UI React"
     },
     {
