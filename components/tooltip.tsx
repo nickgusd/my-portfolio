@@ -4,9 +4,9 @@ import { Icon, Popup } from 'semantic-ui-react';
 const style = {
   borderRadius: 8,
   padding: '1em',
-  backgroundColor: '#1c4250',
   color: 'white',
-  border: 'none'
+  border: 'none',
+  backgroundColor: '#1c4250'
 };
 
 const Tooltip = ({ content = 'testing', icon }: any) => (
