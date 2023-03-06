@@ -43,7 +43,8 @@ export const Card = ({
       className={styles.container}
       href={href}
       onMouseEnter={onMouseEnter}
-      onMouseLeave={onMouseLeave}>
+      onMouseLeave={onMouseLeave}
+      rel="noreferrer">
       {header && <header>{header}</header>}
       {src && (
         <Image
