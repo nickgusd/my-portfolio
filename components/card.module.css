@@ -60,5 +60,10 @@
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    gap: 14px;
+    justify-content: space-between;
+}
+
+.leftWrapper {
+    display: flex;
+    gap: 8px;
 }

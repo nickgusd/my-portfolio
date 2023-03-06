@@ -16,28 +16,28 @@ export const Grid = ({ data }) => {
         <h1>My Projects</h1>
       </div>
       <div className={styles.row}>
-        {data.slice(0, 3).map(({ github, project, image, deployed, description }) => (
+        {data.slice(0, 3).map(({ github, project, image, deployed, description, stack }) => (
           <Card
             onClick={null}
             experience={false}
             contact={false}
             header={project}
             content={description}
-            footer={<CardFooter github={github} deployed={deployed} />}
+            footer={<CardFooter github={github} deployed={deployed} stack={stack} />}
             src={image}
             href={deployed}
           />
         ))}
       </div>
       <div className={styles.row}>
-        {data.slice(3, 6).map(({ github, project, image, deployed, description }) => (
+        {data.slice(3, 6).map(({ github, project, image, deployed, description, stack }) => (
           <Card
             onClick={null}
             experience={false}
             contact={false}
             header={project}
             content={description}
-            footer={<CardFooter github={github} deployed={deployed} />}
+            footer={<CardFooter github={github} deployed={deployed} stack={stack} />}
             src={image}
             href={deployed}
           />
