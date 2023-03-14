@@ -43,8 +43,14 @@ color: #34E89E;
     }
    }
 
-@media screen and (max-width: 415px) {
+@media screen and (max-width: 765px) {
     .wrapper{
      padding: 24px;
+    }
+}
+
+@media screen and (max-width: 465px) {
+    .wrapper{
+     width: 100%;
     }
 }
