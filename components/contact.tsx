@@ -27,7 +27,7 @@ export const Contact = () => {
             <p className={active ? styles.link : styles.inactive}>
               <span>Email:</span> nick.guimarais@gmail.com
             </p>
-            <p>Phone: (818) 235-8076</p>
+            <p className={styles.inactive}>Phone: (818) 235-8076</p>
           </div>
         }
       />

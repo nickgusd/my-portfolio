@@ -19,7 +19,7 @@ export const MobileJobsList = ({ data }) => {
                 <div className={styles.header}>{item.position}</div>
                 <div className={styles.date}>{item.date}</div>
                 <br />
-                <div>{item.description}</div>
+                <div className={styles.description}>{item.description}</div>
                 <br />
                 {item.techStack && (
                   <div className={styles.techDetails}>
