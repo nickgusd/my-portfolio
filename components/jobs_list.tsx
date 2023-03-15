@@ -21,12 +21,26 @@ export const JobsList = ({ data }) => {
         <h2>{current.company}</h2>
         <h3>{current.position}</h3>
         <p>Date: {current.date}</p>
-        <div>{current.description}</div>
+        <div className={styles.description}>{current.description}</div>
         <br />
         <div className={styles.tech}>
-          {current.techStack && <div>Tech Stack: {current.techStack}</div>}
-          {current.tools && <div>Tools: {current.tools}</div>}
-          {current.testing && <div>Testing: {current.testing}</div>}
+          {current.techStack && (
+            <div>
+              <span>Tech Stack:</span> {current.techStack}
+            </div>
+          )}
+          {current.tools && (
+            <div>
+              <span>Tools: </span>
+              {current.tools}
+            </div>
+          )}
+          {current.testing && (
+            <div>
+              <span>Testing: </span>
+              {current.testing}
+            </div>
+          )}
         </div>
       </div>
     </div>

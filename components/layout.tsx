@@ -17,13 +17,16 @@ interface Props {
 
 export default function Layout({ children }: Props) {
   const isMobile = useMediaQuery({ query: '(max-width: 769px)' });
+  const isSmallMobile = useMediaQuery({ query: '(max-width: 325px)' });
   const [isOpen, setIsOpen] = useState(false);
   const router = useRouter();
   const isGithub = router.pathname === '/github';
+  const containerStyle = isOpen ? styles.openContainer : styles.container;
+  const mobileContainerStyle = isSmallMobile ? styles.mobileContainer : '';
 
   return (
     <Responsive>
-      <div className={isOpen ? styles.openContainer : styles.container}>
+      <div className={`${containerStyle} ${mobileContainerStyle}`}>
         <Head>
           <link rel="icon" href="/favicon.ico" />
           <meta name="description" content="Learn how to build a personal website using Next.js" />

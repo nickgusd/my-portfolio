@@ -45,3 +45,9 @@ color: #b7b6c2;
      padding: 40px;
     }
    }
+
+   @media screen and (max-width: 325px) {
+    .wrapper{
+     padding: 24px 0px;
+    }
+   }

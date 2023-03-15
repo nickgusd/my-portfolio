@@ -10,7 +10,7 @@
 }
 
 
-.container:hover {
+.link:hover {
    background-color: #34e89e2b;
 }
 
@@ -50,6 +50,7 @@
 
 .content {
     padding: 24px;
+    color: white !important;
 }
 
 .contentExperience {
@@ -66,4 +67,17 @@
 .leftWrapper {
     display: flex;
     gap: 8px;
+}
+
+.experience {
+    width: 80%;
+    padding: 0px 60px;
+}
+
+@media screen and (max-width: 456px) {
+    .experience {
+        width: 100%;
+        padding: 0px 24px;
+        border-radius: 0px;
+    }
 }

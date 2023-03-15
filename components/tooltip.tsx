@@ -1,4 +1,5 @@
 import React from 'react';
+import { useMediaQuery } from 'react-responsive';
 import { Icon, Popup } from 'semantic-ui-react';
 
 const style = {
@@ -9,14 +10,17 @@ const style = {
   backgroundColor: '#1c4250'
 };
 
-const Tooltip = ({ content = 'testing', icon }: any) => (
-  <Popup
-    content={content}
-    trigger={<Icon name={icon} size="large" />}
-    position="top center"
-    style={style}
-    basic
-  />
-);
+const Tooltip = ({ content = 'testing', icon }: any) => {
+  const isMobile = useMediaQuery({ query: '(max-width: 765px)' });
+  return (
+    <Popup
+      content={content}
+      trigger={<Icon name={icon} size="large" />}
+      position={isMobile ? 'top left' : 'top center'}
+      style={style}
+      basic
+    />
+  );
+};
 
 export default Tooltip;

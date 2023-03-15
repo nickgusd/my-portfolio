@@ -11,10 +11,8 @@ export const About = () => {
       <h1>Nick Guimarais</h1>
       <h2>I am a Software Engineer</h2>
       <div>
-        I specialize in building User Interfaces for web applications! Currently I am working As a
-        Front End Engineer for an API platform called <span>DemystData.</span> I have experience
-        working on large client projects as well as experience working on large user facing
-        platforms.
+        I specialize in building User Interfaces for web applications! I have experience working on
+        large client projects as well as experience working on large user facing platforms.
       </div>
       <Button />
     </div>

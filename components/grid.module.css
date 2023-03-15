@@ -44,3 +44,11 @@
         margin: 0 auto;
     }
    }
+
+
+   @media screen and (max-width: 725px) {
+    .row {
+     padding: 24px 0px;
+    }
+   }
+

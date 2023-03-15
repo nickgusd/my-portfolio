@@ -1,11 +1,14 @@
 .container {
   background: #0F3443;
   width: 100vw;
-  height: 100vh;
   margin: 0px;
   padding: 0px;
   overflow: auto;
   line-height: 1.4285em;
+  min-height: 100vh !important;       
+  min-height: -moz-available;
+  min-height: -webkit-fill-available;
+  min-height: fill-available;
 }
 
 .openContainer {
@@ -15,6 +18,10 @@
   margin: 0px;
   padding: 0px;
   overflow: hidden;
+}
+
+.mobileContainer {
+  width: 100%;
 }
 
 .wrapper {

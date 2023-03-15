@@ -13,8 +13,16 @@
 .header {
     color: #34E89E;
     font-size: 14px;
-    padding: 14px;
+    padding: 0px 14px 14px;
     text-align: center;
+}
+
+.date {
+    color: #b7b6c2;
+}
+
+.description {
+    color: white;
 }
 
 .techDetails {
@@ -22,5 +30,5 @@
 }
 
 .techDetails > span {
-    color: white;
+    color: #34E89E;
 }
