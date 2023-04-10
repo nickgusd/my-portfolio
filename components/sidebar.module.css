@@ -13,6 +13,11 @@
     margin: 14px 0px;
 } 
 
+.sidebarItem > svg {
+    width: 30px;
+    height: 30px;
+}
+
 .mobileWrapper {
     display: flex;
     flex-direction: row;

@@ -1,19 +1,13 @@
 import React, { useState } from 'react';
 import { useRouter } from 'next/router';
-import Image from 'next/image';
 import { useMediaQuery } from 'react-responsive';
 
 import styles from './sidebar.module.css';
 
-import linkedin from '../public/linkedin-filled.svg';
-import github from '../public/github-logo-filled.svg';
-import facebook from '../public/facebook-filled.svg';
-import instagram from '../public/instagram-filled.svg';
-import linkedinActive from '../public/linkedin-active.svg';
-import githubActive from '../public/github-logo-active.svg';
-import instagramActive from '../public/instagram-active.svg';
-import facebookActive from '../public/facebook-active.svg';
-import externalLinkActive from '../public/external-link-active.svg';
+import { BsLinkedin } from 'react-icons/bs';
+import { BsGithub } from 'react-icons/bs';
+import { BsFacebook } from 'react-icons/bs';
+import { BsInstagram } from 'react-icons/bs';
 
 export const Sidebar = () => {
   const [current, setCurrent] = useState(null);
@@ -23,24 +17,32 @@ export const Sidebar = () => {
 
   const sideBarItems = [
     {
-      filled: linkedin,
-      active: linkedinActive,
-      href: 'https://www.linkedin.com/in/nick-guimarais-5b1b6249/'
+      filled: <BsLinkedin color="#b7b6c2" />,
+      active: <BsLinkedin color="#34E89E" />,
+      href: 'https://www.linkedin.com/in/nick-guimarais-5b1b6249/',
+      name: 'linkedIn'
     },
     {
-      filled: github,
-      active: githubActive,
-      href: 'https://my-portfolio-nickgusd.vercel.app/github'
+      filled: <BsGithub color="#b7b6c2" />,
+      active: <BsGithub color="#34E89E" />,
+      href: 'https://my-portfolio-nickgusd.vercel.app/github',
+      name: 'github'
     },
-    { filled: facebook, active: facebookActive, href: 'https://www.facebook.com/nick.guimarais/' },
     {
-      filled: instagram,
-      active: instagramActive,
-      href: 'https://www.instagram.com/nick_dacosta21/'
+      filled: <BsFacebook color="#b7b6c2" />,
+      active: <BsFacebook color="#34E89E" />,
+      href: 'https://www.facebook.com/nick.guimarais/',
+      name: 'facebook'
+    },
+    {
+      filled: <BsInstagram color="#b7b6c2" />,
+      active: <BsInstagram color="#34E89E" />,
+      href: 'https://www.instagram.com/nick_dacosta21/',
+      name: 'instagram'
     }
   ];
 
-  const onMouseOver = (item) => setCurrent(item.active);
+  const onMouseOver = (item) => setCurrent(item.name);
 
   if (isMobile && !isContact) return null;
 
@@ -53,35 +55,11 @@ export const Sidebar = () => {
           target="_blank"
           className={styles.sidebarItem}
           onMouseEnter={() => onMouseOver(item)}
-          onMouseLeave={() => setCurrent(null)}>
-          <Image
-            src={current === item.active ? item.active : item.filled}
-            width={30}
-            height={30}
-            priority
-          />
+          onMouseLeave={() => setCurrent(null)}
+          rel="noreferrer">
+          {current === item.name ? item.active : item.filled}
         </a>
       ))}
-      {!isMobile && (
-        <div className={styles.sidebarHidden}>
-          {sideBarItems.map((item, idx) => (
-            <a
-              href={item.href}
-              key={idx}
-              target="_blank"
-              onMouseEnter={() => onMouseOver(item)}
-              onMouseLeave={() => setCurrent(null)}>
-              <Image
-                src={current === item.active ? item.filled : item.active}
-                width={30}
-                height={30}
-                priority
-              />
-            </a>
-          ))}
-          <Image src={externalLinkActive} width={20} height={20} priority />
-        </div>
-      )}
     </div>
   );
 };

@@ -74,6 +74,18 @@
     padding: 0px 60px;
 }
 
+.github > svg {
+    width: 25px;
+    height: 25px;
+}
+
+.external > svg {
+    width: 25px;
+    height: 25px;
+    transform: scale(1.1);
+}
+
+
 @media screen and (max-width: 456px) {
     .experience {
         width: 100%;

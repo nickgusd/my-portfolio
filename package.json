@@ -19,6 +19,7 @@
     "next": "^12.2.5",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-icons": "^4.8.0",
     "react-pdf": "^5.7.2",
     "react-responsive": "^9.0.0-beta.10",
     "semantic-ui-css": "^2.4.1",

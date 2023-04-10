@@ -1,12 +1,8 @@
 import React from 'react';
-
 import { useState } from 'react';
-import Image from 'next/image';
+import { BsGithub } from 'react-icons/bs';
+import { FiExternalLink } from 'react-icons/fi';
 
-import githubIcon from '../public/github-logo-filled.svg';
-import githubActive from '../public/github-logo-active.svg';
-import externalLink from '../public/external-link.svg';
-import externalLinkActive from '../public/external-link-active.svg';
 import Tooltip from './tooltip';
 
 import styles from './card.module.css';
@@ -30,20 +26,22 @@ export const CardFooter = ({ github, deployed, stack }) => {
     <div className={styles.cardFooter}>
       <div className={styles.leftWrapper}>
         <a
+          className={styles.github}
           href={github}
           target="_blank"
           onMouseEnter={onMouseEnter}
           onMouseLeave={onMouseLeave}
           rel="noreferrer">
-          <Image src={active ? githubActive : githubIcon} width={20} height={20} />
+          <BsGithub color={active ? '#34E89E' : '#b7b6c2'} />
         </a>
         <a
+          className={styles.external}
           href={deployed}
           target="_blank"
           onMouseEnter={onMouseEnter2}
           onMouseLeave={onMouseLeave2}
           rel="noreferrer">
-          <Image src={active2 ? externalLinkActive : externalLink} width={20} height={20} />
+          <FiExternalLink color={active2 ? '#34E89E' : '#b7b6c2'} />
         </a>
       </div>
       {stack && <Tooltip icon="info circle" content={stack} />}
