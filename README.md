@@ -1,34 +1,49 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Nick's Portfolio
 
-## Getting Started
+Welcome to my development portfolio! This website showcases my skills and experience as a web developer, and serves as a showcase for my projects.
 
-First, run the development server:
+## Technologies Used
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+- TypeScript
+- Next.js
+- React
+- React-PDF
+- React-Responsive
+- Semantic UI React
+- HTML
+- CSS
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Features
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+- View information about my skills and experience as a web developer
+- View my projects, their descriptions, and github links
+- View my contact information and send me an email
+- View a PDF version of my resume
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+## Installation
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+To use this website, follow these steps:
 
-## Learn More
+1. Clone the repository to your local machine using git clone https://github.com/nickgusd/my-portfolio.git.
+2. Navigate to the project folder in your terminal.
+3. Install the dependencies by running npm install.
+4. Start the development server by running npm run dev.
+5. Open your web browser and navigate to http://localhost:3000.
 
-To learn more about Next.js, take a look at the following resources:
+## Usage
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Once you have the website running in your web browser, you can:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- View information about my skills and experience as a web developer
+- View my projects and their descriptions
+- Download a PDF version of my resume
+- View the website on multiple devices, thanks to its responsiveness
+- Navigate the website easily thanks to its user-friendly design
 
-## Deploy on Vercel
+## Credits
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+This portfolio was created by Nick Guimarais.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## License
+
+This portfolio is licensed under the MIT License. See the LICENSE file for more information.
