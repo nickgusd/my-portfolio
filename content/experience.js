@@ -3,8 +3,8 @@ export const experience = [
         position: "Front End Engineer",
         company: "Demyst",
         date: "June 2021 - January 2023",
-        description: "Joined the Truebiz team at Demyst where I built the UI for a client's Bankers Portal to help automate the lending procress for small business Loans. Once the Truebiz projects went live I was switched onto the core platform team that develops Demyst.com. On the core platform team I helped build and implement UI components, develop new features, fix bugs, and support the migration of the platform to Next.JS",
-        techStack: "React, Next.js, Redux, AWS, Styled Components, Less, Axios, Jenkins CI/CD",
+        description: "I played a key role in building the UI for the Data API platform, which featured a searchable and filterable Data Catalog, Data APIs, a Billing Dashboard, a Team Settings page, and the ability to generate sample Data APIs on the spot using a selected dataset. In addition, I designed the UI for various client projects, including Banker's portals, which streamlined the lending process for small businesses by allowing them to upload financial statements and receive automatic lending decisions based on the bank's requirements. I also contributed to creating and maintaining reusable components for the Demyst Design System in Storybook, which was used to build both the Data API platform and client projects. Moreover, I helped implement new features, resolve bugs, and facilitate the migration of the platform to Next.js.",
+        techStack: "JavaScript, Next.js, React, HTML, CSS, Redux, AWS, Styled Components, Less, Axios, Jenkins CI/CD, REST APIs, Recharts, Storybook",
         tools: "Jira, Github Issues, Figma",
         testing: "Cypress, Enzyme, React Testing Library, Jest"
     },
@@ -12,8 +12,8 @@ export const experience = [
         position: "Front End Engineer",
         company: "Lifeshack",
         date: "November 2020 - May 2021",
-        description: 'Helped develop the UI for a remote and hybrid only job search platform called Lifeshack.com. I made the entire platform mobile responsive, implemented job filters on mobile and desktop, created resusable components, implemented the profile pages, and performed QA testing on the entire platform.',
-        techStack: "React, Next.js, TypeScript, AWS, Semantic UI",
+        description: 'I played a vital role in developing the UI for Lifeshack.com, a job search platform exclusively designed for remote and hybrid positions. My work involved creating a mobile-responsive interface, implementing job filters for both desktop and mobile versions, designing reusable components, developing profile and preference pages, and integrating GraphQL endpoints on the front end. As part of my contributions, I conducted thorough quality assurance testing on the entire platform to ensure its smooth and efficient functionality.',
+        techStack: "TypeScript, Next.js, React.js, HTML, CSS, UseContext, Node.js, Express, GraphQL, AWS, Apollo, DynamoDB, Semantic UI",
         tools: "AdobeXD, Github Issues"
     },
     {
