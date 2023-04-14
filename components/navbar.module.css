@@ -1,37 +1,69 @@
 .wrapper {
-height: 80px;
-padding: 14px;
-display: flex;
-flex-direction: row;
-justify-content: space-between;
+    padding: 14px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 80px;
 }
 
 .link {
-color: #F8F8F7;
-margin: 14px;
+    margin: 14px;
+    color: #F8F8F7;
+}
+
+.link::after {
+    content: '';
+    display: block;
+    margin:  8px 0px auto;
+    height: 2px;
+    width: 0px;
+    background: transparent;
+    transition: width .5s ease, background-color .5s ease;
 }
 
 .link:hover {
-color: #34E89E;
-border-bottom: 1px solid #34E89E;
-margin: 14px 14px 0px;
+    color: #34E89E;
+}
+
+.link:hover:after {
+    width: 100%;
+    background-color: #34E89E;
+    color: #34E89E;
 }
 
 .linkActive {
-color: #34E89E;
-border-bottom: 1px solid #34E89E;
-margin: 14px 14px 0px;
+    margin: 14px 14px 0px;
+    color: #34E89E;
+}
+
+.linkActive:hover {
+    color: #34E89E;
+}
+
+.linkActive:after {
+    width: 100%;
+    content: '';
+    display: block;
+    margin:  8px 0px auto;
+    height: 2px;
+    background-color: #34E89E;
+    border-bottom: 1px solid #34E89E;
 }
 
 .linkWrapper {
-display: flex;
-flex-direction: row;
-margin-right: 60px;
+    flex-direction: row;
+    margin-right: 60px;
+    display: flex;
 }
 
 .imageWrapper {
-cursor: pointer;
-margin-left: 30px;
-margin-top: 3px;
-transform: scale(1.5);
+    margin-left: 30px;
+    margin-top: 3px;
+    transform: scale(1.5);
+    cursor: pointer;
+    transition: transorm .5s ease, 
+}
+
+.imageWrapper:hover {
+    transform: scale(1.7);
 }
