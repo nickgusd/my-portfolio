@@ -21,7 +21,7 @@ export const JobsList = ({ data }) => {
       <div className={styles.secondItem}>
         <div className={styles.headerWrapper}>
           <h2>{current.company}</h2>
-          <div className={styles.toolTip}>
+          <div className={styles.toolTipWrapper}>
             <Tooltip content={current.companyDescription} icon="info circle" size="small" />
           </div>
         </div>
