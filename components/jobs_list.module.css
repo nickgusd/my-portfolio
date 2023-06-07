@@ -13,6 +13,22 @@
     display: flex;
 }
 
+.headerWrapper {
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: white;
+}
+
+.headerWrapper > h2 {
+    margin-bottom: 0px;
+}
+
+.toolTip {
+    margin-top: 6px;
+}
+
 .innerWrapper {
     flex-direction: column;
     width: 100%;
