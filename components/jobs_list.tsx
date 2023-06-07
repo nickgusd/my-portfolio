@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Tooltip from './tooltip';
 
 import styles from './jobs_list.module.css';
 
@@ -18,7 +19,12 @@ export const JobsList = ({ data }) => {
         ))}
       </div>
       <div className={styles.secondItem}>
-        <h2>{current.company}</h2>
+        <div className={styles.headerWrapper}>
+          <h2>{current.company}</h2>
+          <div className={styles.toolTip}>
+            <Tooltip content={current.companyDescription} icon="info circle" size="small" />
+          </div>
+        </div>
         <h3>{current.position}</h3>
         <p>Date: {current.date}</p>
         <div className={styles.description}>{current.description}</div>

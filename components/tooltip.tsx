@@ -10,12 +10,12 @@ const style = {
   backgroundColor: '#1c4250'
 };
 
-const Tooltip = ({ content = 'testing', icon }: any) => {
+const Tooltip = ({ content, icon, size = "large" }: any) => {
   const isMobile = useMediaQuery({ query: '(max-width: 765px)' });
   return (
     <Popup
       content={content}
-      trigger={<Icon name={icon} size="large" />}
+      trigger={<Icon name={icon} size={size} />}
       position={isMobile ? 'top left' : 'top center'}
       style={style}
       basic
