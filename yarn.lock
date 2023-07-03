@@ -354,10 +354,10 @@
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
 
-"@pdftron/webviewer@^8.8.0":
-  version "8.8.0"
-  resolved "https://registry.yarnpkg.com/@pdftron/webviewer/-/webviewer-8.8.0.tgz#95d3778a776951e82fad38a19fc2a130ee823daf"
-  integrity sha512-3oAX224ilOyVQOCdbWusV6w9O6Pay0ZBe3+c6AeWoY/ulRQNpKrNZ8bN2w3HaJIjEFmJkAQ9cAOUOkttD54VAw==
+"@pdftron/webviewer@10.1.1":
+  version "10.1.1"
+  resolved "https://registry.yarnpkg.com/@pdftron/webviewer/-/webviewer-10.1.1.tgz#4f674bb652cc07ee316f8e8884b07093e6bc526c"
+  integrity sha512-ucvXIEAQ+JP8zmAbdUCy1waPSd6idMypxdqBM3XdTKYLp6HuG6HmQCmTYdJVOFkCoIp9nPIdPWsZC0ULOP7kkg==
 
 "@pkgr/utils@^2.3.1":
   version "2.3.1"
