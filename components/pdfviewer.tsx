@@ -1,7 +1,7 @@
 // @ts-nocheck
 import React, { useEffect, useRef } from 'react';
 
-export default function HomePage() {
+export default function PDFViewer() {
   const viewer = useRef(null);
   const key = process.env.NEXT_PUBLIC_DEMO;
 
