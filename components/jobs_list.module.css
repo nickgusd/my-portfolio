@@ -78,6 +78,7 @@
     align-items: center;
     color: #b7b6c2;
     border-radius: 9px;
+    cursor: pointer;
 }
 
 .currentTab {
@@ -91,6 +92,7 @@
     border-radius: 9px;
     border: 1px solid #34E89E;
 }
+
 
 .tab:hover {
     background-color: #34e89e2b;
