@@ -32,7 +32,11 @@ export const GithubItems = () => {
           onClick={null}
           experience={false}
           contact={false}
-          header={<h2>Personal</h2>}
+          header={
+            <div>
+              <br />
+            </div>
+          }
           src={!active ? github : githubActive}
           href="https://github.com/nickgusd"
           footer={
@@ -49,7 +53,11 @@ export const GithubItems = () => {
           onClick={null}
           experience={false}
           contact={false}
-          header={<h2>Work</h2>}
+          header={
+            <div>
+              <br />
+            </div>
+          }
           src={!active2 ? github : githubActive}
           href="https://github.com/NickGDemyst"
           footer={
