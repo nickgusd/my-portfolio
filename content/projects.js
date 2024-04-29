@@ -3,9 +3,9 @@ export const projects = [
         project: "Lifeshack.com",
         github: "https://github.com/PGuimarais/lsjobs-frontend",
         deployed: "https://www.lifeshack.com/",
-        image: "/lifeshack.png",
+        image: "/lifeshack2.png",
         description:
-            "A job search platform that allows a user to search for remote and hybrid jobs only!",
+            "A platform that uses AI to help the user automate their job application process!",
         stack: "TypeScript, Next.js, React.js, HTML, CSS, UseContext, Node.js, Express, GraphQL, AWS, Apollo, DynamoDB, Semantic UI"
     },
     {

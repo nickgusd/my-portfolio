@@ -11,18 +11,17 @@ export default function PDFViewer() {
         {
           path: '/lib',
           licenseKey: key,
-          initialDoc: '/files/NG_Resume_11.7.23 .pdf'
+          initialDoc: '/files/NG_Resume_4.27.24_Tech.pdf'
         },
         viewer.current
       )
         .then((instance) => {
           const { docViewer } = instance;
-          docViewer.getDocument('/files/NG_Resume_11.7.23 .pdf');
+          docViewer.getDocument('/files/NG_Resume_4.27.24_Tech.pdf');
         })
         .catch((err) => console.log(err));
     });
   }, []);
-  
 
   return (
     <div className="MyComponent">
