@@ -52,11 +52,15 @@ export const MobileNavbar = ({ isOpen, setIsOpen }) => {
           <div className={styles.linkContainer}>
             {navItems.map((item, idx) => {
               return (
-                <div className={styles.linkWrapper}>
-                  <Link key={item} href={'/' + toLower[idx]} passHref>
-                    <a className={styles[activeLink(toLower[idx])]}>{item}</a>
-                  </Link>
+                item === "Resume" ? (
+                  <a href="https://resume-mu-rose-98.vercel.app/resume.html" className={styles[activeLink(toLower[idx])]}>{item}</a>
+                ) : (
+                  <div className={styles.linkWrapper}>
+                    <Link key={item} href={'/' + toLower[idx]} passHref>
+                      <a className={styles[activeLink(toLower[idx])]}>{item}</a>
+                    </Link>
                 </div>
+                )
               );
             })}
           </div>
