@@ -6,13 +6,10 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
-    "postinstall": "yarn run download-webviewer",
-    "download-webviewer": "npx @pdftron/webviewer-downloader"
+    "lint": "next lint"
   },
   "dependencies": {
     "@babel/eslint-parser": "^7.18.9",
-    "@pdftron/webviewer": "^10.5.0",
     "@wojtekmaj/react-hooks": "^1.13.0",
     "eslint-plugin-eslint-plugin": "^5.0.6",
     "eslint-plugin-jest": "^27.0.4",
