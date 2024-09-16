@@ -40,7 +40,7 @@ export const Navbar = () => {
         {navItems.map((item, idx) => {
           return (
             item === "Resume" ? (
-              <a href="https://resume-2p1l675b3-nickgusds-projects.vercel.app/resume.html" className={styles[activeLink(toLower[idx])]}>{item}</a>
+              <a href="https://resume-mu-rose-98.vercel.app/resume.html" className={styles[activeLink(toLower[idx])]}>{item}</a>
             ):
             (<Link key={item} href={'/' + toLower[idx]} passHref>
               <a className={styles[activeLink(toLower[idx])]}>{item}</a>
