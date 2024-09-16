@@ -53,7 +53,9 @@ export const MobileNavbar = ({ isOpen, setIsOpen }) => {
             {navItems.map((item, idx) => {
               return (
                 item === "Resume" ? (
-                  <a href="https://resume-mu-rose-98.vercel.app/resume.html" className={styles[activeLink(toLower[idx])]}>{item}</a>
+                  <div className={styles.linkWrapper}>
+                    <a href="https://resume-mu-rose-98.vercel.app/resume.html" className={styles[activeLink(toLower[idx])]}>{item}</a>
+                  </div>
                 ) : (
                   <div className={styles.linkWrapper}>
                     <Link key={item} href={'/' + toLower[idx]} passHref>
