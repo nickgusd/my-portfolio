@@ -6,8 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
-    "postinstall": "yarn run download-webviewer"
+    "lint": "next lint"
   },
   "dependencies": {
     "@babel/eslint-parser": "^7.18.9",
